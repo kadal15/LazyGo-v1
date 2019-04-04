@@ -1,0 +1,491 @@
+#!bin/sh
+#edit boleh asal ijin dulu ke ane
+#kontak wa 085336117892
+w='\e[97m'         #putih
+g='\033[1;92m'     #hijau
+r='\033[1;91m'     #merah
+b='\033[1;94m'     #biru
+uline='\e[1;4m'    #bergarisbawah
+c='\033[1;36m'     #cyan
+red='\033[1;31m'
+k='\033[1;33m'     #kuning
+u='\033[1;35m'     #ungu
+re='\033[0m'       #putih
+
+figlet -f mono12 "LazyGo"|lolcat
+sleep 1
+echo "$r Tools Ini Di Gunakan Untuk Membuat Banner Termux / Logo Termux\n "
+sleep 2
+echo "$k==========================<$reWelcome To My Tools$k>===========================$re\n"
+echo "$c Author By      $r :$g Kadal-15$re                              ©Kadal-15"
+echo "$c Channel Youtube$r :$g Jejaka Tutorial$re                       v 2.1"
+echo "$c Whatsapp       $r :$g 085336117892$re"
+echo "$c Telegram       $r :$g 085336117862$re"
+echo "$c Team           $r :$g Termux Id$re\n\n"
+sleep 2
+figlet "Cowsay" |lolcat
+echo ""
+echo "$c Masukkan nama mu$re\n"
+sleep 0.5
+read -p "Kadal-15 ~# " cow;
+lagi='y'
+while [ $lagi = 'y' ] || [ $lagi = 'Y' ];
+do
+  clear
+  echo "\033[1;32mPilih Cowsay Yang Ingin Anda Pakai\n"
+  sleep 0.5
+  echo "$g[$k 1 $g]$re daemon"
+  echo "$g[$k 2 $g]$re default"
+  echo "$g[$k 3 $g]$re dragon"
+  echo "$g[$k 4 $g]$re elephant"
+  echo "$g[$k 5 $g]$re eyes"
+  echo "$g[$k 6 $g]$re ghostbusters"
+  echo "$g[$k 7 $g]$re turkey"
+  echo "$g[$k 8 $g]$re tux$re\n\n"
+  sleep 0.5
+  read -p "Kadal-15 ~# " cows;
+  if [ $cows = 1 ] || [ $cows = 01 ];
+  then
+  cowsay -f daemon $cow |lolcat
+  echo "cowsay -f daemon $cow |lolcat" >bash.sh
+  fi
+
+  if [ $cows = 2 ] || [ $cows = 02 ];
+  then
+  cowsay -f default $cow |lolcat
+  echo "cowsay -f default $cow |lolcat" >bash.sh
+  fi
+
+  if [ $cows = 3 ] || [ $cows = 03 ];
+  then
+  cowsay -f dragon $cow |lolcat
+  echo "cowsay -f dragon $cow |lolcat" >bash.sh
+  fi
+
+  if [ $cows = 4 ] || [ $cows = 04 ];
+  then
+  cowsay -f elephant $cow |lolcat
+  echo "cowsay -f elephant $cow |lolcat" >bash.sh
+  fi
+
+  if [ $cows = 5 ] || [ $cows = 05 ];
+  then
+  cowsay -f eyes $cow |lolcat
+  echo "cowsay -f eyes $cow |lolcat" >bash.sh
+  fi
+
+  if [ $cows = 6 ] || [ $cows = 06 ];
+  then
+  cowsay -f ghostbusters $cow |lolcat
+  echo "cowsay -f ghostbusters $cow |lolcat" >bash.sh
+  fi
+
+  if [ $cows = 7 ] || [ $cows = 07 ];
+  then
+  cowsay -f turkey $cow |lolcat
+  echo "cowsay -f turkey $cow |lolcat" >bash.sh
+  fi
+
+  if [ $cows = 8 ] || [ $cows = 08 ];
+  then
+  cowsay -f tux $cow |lolcat
+  echo "cowsay -f tux $cow |lolcat" >bash.sh
+  fi
+  sleep 2
+
+  echo "$g pilih lagi $k($re Y/T $k)$re\n"
+  sleep 0.2
+  read -p "Kadal-15 ~# " lagi;
+
+      #untuk validasi input
+      while  [ $lagi != 'y' ] && [ $lagi != 'Y' ] && [ $lagi != 't' ] && [ $lagi != 'T' ];
+      do
+         echo "$g Ops, isi lagi dengan$k ($re y/Y/t/Y $k)$re\n\n";
+         sleep 0.2
+         echo "$g pilih lagi$k($re y/t $k)$re\n\n ";
+         sleep 0.2
+         read -p "Kadal-15 ~# " lagi;
+       done
+done
+clear
+echo "$g Menyimpan.....\n"
+sleep 3
+figlet "Figlet" |lolcat
+echo ""
+echo "$c Masukan Kata Yang Ingin Anda Buat$re\n"
+sleep 0.5
+read -p "Kadal-15 ~# " pil;
+ulang='y'
+while [ $ulang = 'y' ] || [ $ulang = 'Y' ];
+do
+  clear
+  echo "$c Pilih Font Kesukaan Anda\n"
+  sleep 0.5
+  echo "$g[$k 1$g ]$re ascii12       $g[$k 23$g ]$re mono12"
+  echo "$g[$k 2$g ]$re ascii9        $g[$k 24$g ]$re mono9"
+  echo "$g[$k 3$g ]$re banner        $g[$k 25$g ]$re moscow"
+  echo "$g[$k 4$g ]$re big           $g[$k 26$g ]$re pagga"
+  echo "$g[$k 5$g ]$re bigascii12    $g[$k 27$g ]$re script"
+  echo "$g[$k 6$g ]$re bigascii9     $g[$k 28$g ]$re shadow"
+  echo "$g[$k 7$g ]$re bigmono12     $g[$k 29$g ]$re slant"
+  echo "$g[$k 8$g ]$re block         $g[$k 30$g ]$re small"
+  echo "$g[$k 9$g ]$re bubble        $g[$k 31$g ]$re smascii12"
+  echo "$g[$k 10$g ]$re circle       $g[$k 32$g ]$re smascii9"
+  echo "$g[$k 11$g ]$re digital      $g[$k 33$g ]$re smblock"
+  echo "$g[$k 12$g ]$re emboss       $g[$k 34$g ]$re smbraille"
+  echo "$g[$k 13$g ]$re frango       $g[$k 35$g ]$re smmono12"
+  echo "$g[$k 14$g ]$re future       $g[$k 36$g ]$re smmono9"
+  echo "$g[$k 15$g ]$re hz           $g[$k 37$g ]$re smscript"
+  echo "$g[$k 16$g ]$re ilhebrew     $g[$k 38$g ]$re smshadow"
+  echo "$g[$k 17$g ]$re ivrit        $g[$k 39$g ]$re standard"
+  echo "$g[$k 18$g ]$re jis020       $g[$k 40$g ]$re term"
+  echo "$g[$k 19$g ]$re koi8r        $g[$k 41$g ]$re upper"
+  echo "$g[$k 20$g ]$re lean         $g[$k 42$g ]$re ushebrew"
+  echo "$g[$k 21$g ]$re mini         $g[$k 43$g ]$re uskata"
+  echo "$g[$k 22$g ]$re mnemonic     $g[$k 44$g ]$re wideterm$re\n"
+  sleep 0.5
+  read -p "Kadal-15 ~# " pil2;
+  if [ $pil2 = 1 ] || [ $pil2 = 01 ];
+  then
+  figlet -f ascii12 $pil |lolcat
+  echo "figlet -f ascii12 $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 2 ] || [ $pil2 = 02 ];
+  then
+  figlet -f ascii9 $pil |lolcat
+  echo "figlet -f ascii9 $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 3 ] || [ $pil2 = 03 ];
+  then
+  figlet -f banner $pil |lolcat
+  echo "figlet -f banner $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 4 ] || [ $pil2 = 04 ];
+  then
+  figlet -f big $pil |lolcat
+  echo "figlet -f big $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 5 ] || [ $pil2 = 05 ];
+  then
+  figlet -f bigascii12 $pil |lolcat
+  echo "figlet -f bigascii12 $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 6 ] || [ $pil2 = 06 ];
+  then
+  figlet -f bigascii9 $pil |lolcat
+  echo "figlet -f bigascii9 $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 7 ] || [ $pil2 = 07 ];
+  then
+  figlet -f bigmono12 $pil |lolcat
+  echo "figlet -f bigmono12 $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 8 ] || [ $pil2 = 08 ];
+  then
+  figlet -f block $pil |lolcat
+  echo "figlet -f block $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 9 ] || [ $pil2 = 09 ];
+  then
+  figlet -f bubble $pil |lolcat
+  echo "figlet -f bubble $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 10 ];
+  then
+  figlet -f circle $pil |lolcat
+  echo "figlet -f circle $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 11 ];
+  then
+  figlet -f digital $pil |lolcat
+  echo "figlet -f digital $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 12 ];
+  then
+  figlet -f emboss $pil |lolcat
+  echo "figlet -f emboss $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 13 ];
+  then
+  figlet -f frango $pil |lolcat
+  echo "figlet -f frango $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 14 ];
+  then
+  figlet -f future $pil |lolcat
+  echo "figlet -f future $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 15 ];
+  then
+  figlet -f hz $pil |lolcat
+  echo "figlet -f hz $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 16 ];
+  then
+  figlet -f ilhebrew $pil |lolcat
+  echo "figlet -f ilhebrew $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 17 ];
+  then
+  figlet -f ivrit $pil |lolcat
+  echo "figlet -f ivrit $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 18 ];
+  then
+  figlet -f jis020 $pil |lolcat
+  echo "figlet -f jis020 $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 19 ];
+  then
+  figlet -f koi8r $pil |lolcat
+  echo "figlet -f koi8r $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 20 ];
+  then
+  figlet -f lean $pil |lolcat
+  echo "figlet -f lean $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 21 ];
+  then
+  figlet -f mini $pil |lolcat
+  echo "figlet -f mini $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 22 ];
+  then
+  figlet -f mnemonic $pil |lolcat
+  echo "figlet -f mnemonic $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 23 ];
+  then
+  figlet -f mono12 $pil |lolcat
+  echo "figlet -f mono12 $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 24 ];
+  then
+  figlet -f mono9 $pil |lolcat
+  echo "figlet -f mono9 $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 25 ];
+  then
+  figlet -f moscow $pil |lolcat
+  echo "figlet -f moscow $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 26 ];
+  then
+  figlet -f pagga $pil |lolcat
+  echo "figlet -f pagga $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 27 ];
+  then
+  figlet -f script $pil |lolcat
+  echo "figlet -f script $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 29 ];
+  then
+  figlet -f slant $pil |lolcat
+  echo "figlet -f slant $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 28 ];
+  then
+  figlet -f shadow $pil |lolcat
+  echo "figlet -f shadow $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 30 ];
+  then
+  figlet -f small $pil |lolcat
+  echo "figlet -f small $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 31 ];
+  then
+  figlet -f smascii12 $pil |lolcat
+  echo "figlet -f smascii12 $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 32 ];
+  then
+  figlet -f smascii9 $pil |lolcat
+  echo "figlet -f smascii9 $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 34 ];
+  then
+  figlet -f smbraille $pil |lolcat
+  echo "figlet -f smbraille $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 35 ];
+  then
+  figlet -f smmono12 $pil |lolcat
+  echo "figlet -f smmono12 $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 36 ];
+  then
+  figlet -f smmono9 $pil |lolcat
+  echo "figlet -f smmono9 $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 37 ];
+  then
+  figlet -f smscript $pil |lolcat
+  echo "figlet -f smscript $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 38 ];
+  then
+  figlet -f smshadow $pil |lolcat
+  echo "figlet -f smshadow $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 39 ];
+  then
+  figlet -f standard $pil |lolcat
+  echo "figlet -f standard $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 40 ];
+  then
+  figlet -f term $pil |lolcat
+  echo "figlet -f term $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 41 ];
+  then
+  figlet -f upper $pil |lolcat
+  echo "figlet -f upper $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 42 ];
+  then
+  figlet -f ushebrew $pil |lolcat
+  echo "figlet -f ushebrew $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 43 ];
+  then
+  figlet -f uskata $pil |lolcat
+  echo "figlet -f uskata $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 44 ];
+  then
+  figlet -f wideterm $pil |lolcat
+  echo "figlet -f wideterm $pil |lolcat" >kadal.sh
+  fi
+
+  if [ $pil2 = 33 ];
+  then
+  figlet -f smblock $pil |lolcat
+  echo "figlet -f smblock $pil |lolcat" >kadal.sh
+  fi
+  sleep 2
+
+  echo "$g pilih lagi$k ($re Y/T$k )$re\n"
+  sleep 0.5
+  read -p "Kadal-15 ~# " ulang;
+
+      #untuk validasi input
+      while  [ $ulang != 'y' ] && [ $ulang != 'Y' ] && [ $ulang != 't' ] && [ $ulang != 'T' ];
+      do
+         echo "$g Ops, isi lagi dengan$k ($re y/Y/t/Y$k )\n";
+         sleep 0.2
+         echo "$g pilih lagi$k ($re y/t$k )$re\n\n ";
+         sleep 0.2
+         read -p "Kadal-15 ~# " ulang;
+       done
+done
+figlet "Prompt" |lolcat
+lagi1='y'
+while [ $lagi1 = 'y' ] || [ $lagi1 = 'Y' ];
+do
+  echo "$c Masukan Kata Yang Ingin Anda Jadikan Prompt$re\n"
+  sleep 0.5
+  read -p "Kadal-15 ~# " pil4;
+  clear
+  echo 'PS1="\[\033[1;36m\]'$pil4'\[\033[1;37m\]:\[\033[1;31m\]\w \[\033[1;32m\]\\$ "'>prom.sh
+  echo 'PS1="\[\033[1;36m\]'$pil4'\[\033[1;37m\]:\[\033[1;31m\]\w \[\033[1;32m\]\\$ "'
+  echo "$g Masukan lagi$k ($re Y/T$k )$re\n"
+  read -p "Kadal-15 ~# " lagi1;
+
+      #untuk validasi input
+      while  [ $lagi1 != 'y' ] && [ $lagi1 != 'Y' ] && [ $lagi1 != 't' ] && [ $lagi1 != 'T' ];
+      do
+         echo "$g Ops, isi lagi dengan$k ($re y/Y/t/Y$k )\n";
+         sleep 0.2
+         echo "$g Masukan lagi$k ($re y/t$k )$re\n\n ";
+         sleep 0.2
+         read -p "Kadal-15 ~# " lagi1;
+       done
+done
+echo 'echo ""
+echo "\033[1;34mToday is:\t\t\033[1;32m" `date`; echo ""
+echo "\033[1;34mKernel Information: \t\033[1;32m" `uname -smr`
+echo "\033[1;33m=================================================================="
+echo ""' >status.sh
+clear
+echo "$g menyimpan.....\n"
+sleep 3
+cat kadal.sh >>bash.sh
+cat prom.sh >>bash.sh
+cat status.sh >>bash.sh
+rm -r kadal.sh prom.sh status.sh
+sh bash.sh
+echo "$g ingin Mengubah Tampilan Termux Tekan$k ($re Y/T$k )$re\n\n"
+read -p "Kadal-15 ~# " pil3;
+if [ $pil3 = y ] || [ $pil3 = Y ];
+then
+   clear
+   echo "$g Menyiapkan Backup\n\n$re"
+   sleep 3
+   mkdir backup
+   mkdir module
+   cd
+   cd /data/data/com.termux/files/usr/etc
+   cp -r bash.bashrc /data/data/com.termux/files/home/LazyGo/backup
+   cd
+   cd /data/data/com.termux/files/home/LazyGo
+   echo 'command_not_found_handle() {        /data/data/com.termux/files/usr/libexec/termux/command-not-found "$1"
+}
+PS1="\$ "' >/data/data/com.termux/files/home/LazyGo/module/bash.bashrc
+   cat bash.sh >>/data/data/com.termux/files/home/LazyGo//module/bash.bashrc
+   cp -r /data/data/com.termux/files/home/LazyGo//module/bash.bashrc /data/data/com.termux/files/usr/etc
+   clear
+   echo "$c ok sudah selsai untuk mencoba silahkan restart termux kalian$re\n\n"
+
+else
+   echo "$g Save ke bash.sh$re"
+   sleep 2
+   exit
+
+fi
+exit
